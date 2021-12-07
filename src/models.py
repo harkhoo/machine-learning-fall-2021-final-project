@@ -9,7 +9,7 @@ class FeedForward(torch.nn.Module):
     def __init__(self):
         super(FeedForward, self).__init__()
         self.fc1 = nn.Linear(100, 10)
-        self.fc2 = nn.Linear(10, 5)
+        self.fc2 = nn.Linear(10, 1)
 
     def forward(self, x):
         x = self.fc1(x)
